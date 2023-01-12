@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Cortado";
+    src: local("Font/Cortado"),
+    url("Font/Cortado/Cortado\ Script\ Web\ Regular.ttf");
+  }
+
+@font-face {
+    font-family: "Monofonto";
+    src: local("Font/Monofonto"),
+    url("Font/Monofonto/monofonto-rg.otf");
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: x-large;
+}
+
+body {
+    background-image: url('Images/2.jpg');
+    background-size: auto;
+    font-family: 'Cortado';
+    font-size: x-large;
+    text-align: center;
+}
+
+main {
+    font-family: 'Monofonto';
+    font-size: large;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgba(127, 255, 212, 0.566);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.formulaire {
+    list-style-type: none;
+}
+
+.Cartes {
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    background-color: rgba(127, 255, 212, 0.563);
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
