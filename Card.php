@@ -40,8 +40,9 @@ class Card
 }
 
 $hidden_card = new Card();
-$hidden_card->set_card_image('<img src="Ïmages/carte_cachée/hidden_card.png" width=200px; height=150px;>
->');
+$hidden_card->set_name('hidden_card');
+$hidden_card->set_card_image('<img src="Images/carte_cachee/face_cachee.png" width=100px; height=100px;>
+');
 
 $Turkey = new Card();
 $Turkey->set_name('Turkey');
@@ -55,7 +56,7 @@ $Italy->set_card_image('<img src="Images/Cartes/italy.png" width=100px; height=1
 
 $Wales = new Card();
 $Wales->set_name('Wales');
-$Wales->set_card_image('<img src="Images/Cartes/wales.png" width=100px; height=100px;>
+$Wales->set_card_image('<img src="Images/Cartes/wales.jfif" width=100px; height=100px;>
 ');
 
 $Switzerland = new Card();
@@ -163,7 +164,9 @@ $Hungary->set_name('Hungary');
 $Hungary->set_card_image('<img src="Images/Cartes/hungary.png" width=100px; height=100px;>
 ');
 
-$hidden_card->set_card_image('<img src="Images/carte_cachée/hidden_card.jfif" width=100px; height=100px;>
-');
-  
+$list = [$Russia->get_card_image(), $Portugal->get_card_image(), $Slovakia->get_card_image(), $Ukraine->get_card_image(), $Finland->get_card_image(), $Turkey->get_card_image(), $Belgium->get_card_image(), $Denmark->get_card_image(), $Croatia->get_card_image(), $Czech_Republic->get_card_image(), $Wales->get_card_image(), $North_Macedonia->get_card_image(), $Netherlands->get_card_image(), $Austria->get_card_image(), $Switzerland->get_card_image(), $Sweden->get_card_image(), $Italy->get_card_image(), $Spain->get_card_image(), $England->get_card_image(), $Scotland->get_card_image(), $Germany->get_card_image(), $Poland->get_card_image(), $France->get_card_image(), $Hungary->get_card_image()];
+
+$list2 = [$hidden_card->get_card_image()];
+
+
 ?>

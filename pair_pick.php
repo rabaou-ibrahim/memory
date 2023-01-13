@@ -20,6 +20,8 @@ session_start() ;
 
     <main>
 
+    <br>
+
     <label for="level-select">Choisissez le nombre de paires:</label>
 
     <?php
@@ -38,10 +40,10 @@ session_start() ;
         case '10':  $_SESSION['pick'] = $pick ; header('location:game.php'); break;
         case '11':  $_SESSION['pick'] = $pick ; header('location:game.php'); break;
         case '12':  $_SESSION['pick'] = $pick ; header('location:game.php'); break;
-        default:
-            echo ('Veuillez choisir votre nombre de paires');
     }
 ?>
+<br>
+<br>
 <form name="myform" action="" method="post">
     <select name="pick" onchange="this.form.submit()">
     <option value="--Choix du nombre--">Choix</option>
@@ -57,6 +59,7 @@ session_start() ;
         <option value="12"<?php if($pick == "12"){ echo " selected"; }?>>12</option>
     </select>
 </form>
+<br>
     
 
     </main>
